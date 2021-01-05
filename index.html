@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Interior Consultant</title>
+
+  </head>
+  <body>
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="button-close">
+        <button class="mobile-button-close" onclick="toggleMenuButton()">
+          <i class="fa fa-close"></i>
+        </button>
+      </div>
+     
+      <div class="bungkus">
+        <div class="navigation-mobile">
+          <a href="" class="navigation-item">Home</a>
+          <a href="" class="navigation-item">Collection</a>
+          <a href="" class="navigation-item">About</a>
+          <a href="" class="navigation-item">Contact</a>
+        </div>
+      </div>
+     
+    </div>
+    
+    <div class="container">
+      <section class="top-header">
+        <header>
+
+       
+
+          <button class="icon">this interior</button>
+
+          <button class="mobile-button" onclick="toggleMenuButton()">
+            <i class="fa fa-reorder"></i>
+          </button>
+  
+          <nav>
+            <ul>
+              <li>home</li>
+              <li>collection</li>
+              <li>about</li>
+              <li>contact</li>
+            </ul>
+          </nav>
+        </header>
+      </section>
+
+      <section class="content">
+        <div class="content-text">
+          <div class="title">
+            <h2>Modern interior</h2>
+          </div>
+          <div class="description">
+            A full-Service residential & commercial interior 
+            design and staging company offering professional 
+            organizing & eco-services.
+          </div>
+          <button class="readMore">
+            Read more <i></i>
+          </button>
+        </div>
+
+        <div class="content-image">
+          <img src="./photo1.png" alt=" photo 1">
+        </div>
+
+        <div class="info-detail">
+          <div class="content-designer">
+            <div class="designer-image">
+              <img src="./photo2.png" alt="photo 2">
+            </div>
+            <div class="designer-info">
+              <div class="designer-name">
+                <p>Aliza Webber</p>
+              </div>
+    
+              <div class="designer-job">
+                <p>Interior designer</p>
+              </div>
+            </div>
+           
+          </div>
+
+          <div class="headline-time">
+            <h2>Designed in 2020 by Aliza Webber</h2>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>Imam Zarkasi @ DevChallenges.io</p>
+      </footer>
+
+    </div>
+    
+    <script>
+      function toggleMenuButton(){
+        var element = document.getElementById("mobile-menu");
+
+        if(element.classList.contains("menu-push")){
+          element.classList.remove("menu-push");
+        }else{
+          element.classList.add("menu-push");
+        }
+      }
+    </script>
+
+  </body>
+</html>
